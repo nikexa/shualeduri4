@@ -1,0 +1,463 @@
+:root{
+    --divBackgrround-color:#FEFEFE;
+    --background-color:#F6F8FF;
+    --heshteg-color:#0079FF;
+    --joinedData-color:#697C9A;
+    --text-color:#4B6A9B;
+    --mainName-color:#2B3442;
+}
+.darkmode{
+    --divBackgrround-color:#1E2A47;
+    --background-color:#141D2F;
+    --heshteg-color:#0079FF;
+    --joinedData-color:#FFFFFF;
+    --text-color:#FFFFFF;
+    --mainName-color:#FFFFFF;
+
+}
+body{
+    margin: 0px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+}
+#theme-switch{
+    border: 0px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+#theme-switch i{
+    font-size: 20px;
+}
+#theme-switch i:last-child{
+    display: none;
+}
+.darkmode #theme-switch i:first-child{
+    display: none;
+}
+.darkmode #theme-switch i:last-child{
+    display: block;
+}
+.main{
+    width: 730px;
+    display: flex;
+    flex-direction: column;
+}
+.main .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+.main .top .right{
+    display: flex;
+    gap: 15px;
+}
+.main .top .left p{
+    font-weight: 700;
+    font-size: 26px;
+    font-family: Space Mono;
+    color: var(--mainName-color);
+}
+.main .top .right p{
+    color: var(--joinedData-color);
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 13px;
+
+}
+.main .top .right i{
+    color: var(--joinedData-color);
+    margin-top: 13px;
+    font-size: 20px;
+}
+.main .mid{
+    width: 730px;
+    height: 70px;
+    background-color: var(--divBackgrround-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.main .mid .left{
+    display: flex;
+    align-items: center;
+}
+.main .mid i{
+    font-size: 24px;
+    color: var(--heshteg-color);
+    margin-left: 30px;
+}
+.main .mid input{
+    width: 300px;
+    height: 25px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    font-family: Space Mono;
+    background-color: var(--divBackgrround-color);
+}
+.main .mid .right button{
+    width: 106px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--heshteg-color);
+    color: var(--divBackgrround-color);
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 0px;
+    margin-right: 15px;
+}
+
+
+/* aqedan bottomis kodi */
+
+
+.main .bottom .Second-mid{
+    display: flex;
+    flex-direction: column;
+}
+.bottom{
+    background-color: var(--divBackgrround-color);
+    border-radius: 20px;
+}
+.bottom .zeda{
+	display: grid;
+	grid-template-columns: 0.5fr 1fr ;
+    margin-top: 40px;
+}
+.bottom{
+    background-color: var(--divBackgrround-color);
+    border-radius: 20px;
+    height: 440px;
+}
+.main .Second-mid #Name{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--mainName-color);
+}
+.main .Second-mid #link{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--heshteg-color);
+}
+.main .Second-mid #Bio{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--text-color);
+    position: absolute;
+    width: 480px;
+    margin-top: 80px;
+}
+.main .ResponsiveBio #Bioo{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--text-color);
+    width: 480px;
+    display: none;
+}
+.main .Second-right #JoinedTime{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--text-color);
+    margin-top: -51px;
+    margin-left: 280px;
+}
+.main .bottom .zeda .Second-left{
+    display: flex;
+    justify-content: center;
+}
+.main .bottom .zeda .Second-left img{
+    width: 117px;
+    height: 117px;
+}
+
+
+
+/* aqedan qvemotas codi */
+
+
+.main .qveda .Div-stats .Div-repos #repos{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+.main .qveda .Div-stats .Div-repos #reposNumber{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--mainName-color);
+}
+
+.main .qveda .Div-stats .Div-followers #followers{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-color);
+}
+.main .qveda .Div-stats .Div-followers #followersNumber{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--mainName-color);
+}
+
+.main .qveda .Div-stats .Div-following #following{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-color);
+}
+.main .qveda .Div-stats .Div-following #followingNumber{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--mainName-color);
+}
+
+
+.main .qveda{
+    width: 480px;
+    height: 185px;
+    margin-left: 180px;
+    margin-top: 40px;
+}
+.main .qveda .Div-stats{
+    height: 85px;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.main .qveda .Div-stats .Div-repos{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+}
+.main .qveda .Div-stats .Div-followers{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+}
+.main .qveda .Div-stats .Div-following {
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+}
+.main .qveda .links{
+    display: grid;
+	grid-template-columns: 1fr 0.8fr ;
+    height: 100px;
+    margin-top: 30px;
+}
+.main .qveda .links .location{
+    display: flex;
+    align-items: center;
+}
+.main .qveda .links .twitter{
+    display: flex;
+    align-items: center;
+}
+.main .qveda .links .linkk{
+    display: flex;
+    align-items: center;
+}
+.main .qveda .links .shenoba{
+    display: flex;
+    align-items: center;
+}
+.main .qveda .links .location i{
+    font-size: 20px;
+    color: var(--text-color);
+}
+.main .qveda .links .twitter i{
+    font-size: 20px;
+    color: var(--text-color);
+}
+.main .qveda .links .linkk i{
+    color: var(--text-color);
+    font-size: 20px;
+    
+}
+.main .qveda .links .shenoba i{
+    color: var(--text-color);
+    font-size: 20px;
+}
+.main .qveda .links .location p{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 17px;
+    margin-left: 14px;
+}
+.main .qveda .links .twitter p{
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--text-color);
+    margin-left: 14px;
+}
+.main .qveda .links .linkk a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 17px;
+    margin-left: 14px;
+}
+.main .qveda .links .shenoba p{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 17px;
+    margin-left: 14px;
+}
+
+#ErrorText{
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 15px;
+    color: #F74646;
+    margin-left: 100px;
+}
+#SecondErrorText{
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 15px;
+    color: #F74646;
+    display: none;
+}
+
+@media screen and (max-width:760px) {
+    .main{
+        width: 570px;
+    }
+    .main .mid{
+        width: 570px;
+    }
+    .main .mid input{
+        width: 250px;
+    }
+    .main .bottom .zeda{
+        grid-template-columns: 0.5fr 1fr;
+    }
+    .main .Second-right #JoinedTime{
+        margin: 0;
+        margin-top: 7px;
+    }
+    .main .Second-mid #Bio {
+        display: none;
+    }
+    .main .ResponsiveBio #Bioo{
+        display: block;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .main .qveda{
+        margin: 0px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .bottom{
+        height: 480px;
+    }
+    .main .qveda .links{
+        margin-left: 10px;
+    }
+    #ErrorText{
+        font-weight: 400;
+        font-size: 10px;
+        color: #F74646;
+        margin-left: 30px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .main{
+        width: 320px;
+    }
+    .main .mid{
+        width: 320px;
+        margin-bottom: 10px;
+    }
+    .main .mid input{
+        width: 170px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .main .bottom{
+        height: 530px;
+    }
+    .main .mid i {
+        margin-left: 15px;
+    }
+    .main .mid .right button {
+        width: 84px;
+        margin-right: 10px;
+    }
+    .main .bottom .zeda .Second-left img{
+        width: 70px;
+        height: 70px;
+
+    }
+    .main .Second-mid #Name {
+        font-size: 16px;
+        
+    }
+    .main .Second-mid #link {
+        font-size: 13px;
+    }
+    .main .ResponsiveBio #Bioo{
+        font-size: 13px;
+        width: 280px;
+    }
+    .main .qveda{
+        width: 280px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .main .qveda .links{
+        display: block;
+        margin-top: 20px;
+    
+    }
+    #ErrorText{
+        display: none;
+    }
+
+    #SecondErrorText{
+        font-weight: 400;
+        font-size: 15px;
+        color: #F74646;
+        margin-left: 30px;
+        display: block;
+        margin: 0;
+        margin-bottom: 15px;
+        margin-left: 50px;
+    }
+}
